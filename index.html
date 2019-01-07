@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Sarabun"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>BookList</title>
+	</head>
+	<body>
+		<h1 class="main-title">BookList App</h1>
+		<div class="add-book-form">
+			<h2 class="secondary-title">Add New Book</h2>
+			<div class="alert"></div>
+			<form action="#" class="book-form">
+				<div class="form-element">
+					<label for="title">Title</label
+					><input
+						type="text"
+						id="title"
+						name="title"
+						placeholder="Book title"
+						required
+					/><small class="error">Error message</small>
+				</div>
+				<div class="form-element">
+					<label for="author">Author</label
+					><input
+						type="text"
+						id="author"
+						name="author"
+						placeholder="Book author"
+						required
+					/><small class="error">Error message</small>
+				</div>
+				<div class="form-element">
+					<label for="isbn">ISBN</label
+					><input
+						type="text"
+						id="isbn"
+						name="isbn"
+						placeholder="Book ISBN"
+						required
+					/><small class="error">Error message</small>
+				</div>
+				<button>Add Book</button>
+			</form>
+		</div>
+		<div class="book-list">
+			<h2 class="secondary-title">Book List</h2>
+			<div class="book-table">
+				<div class="book-table-header">
+					<b>Title</b> <b>Author</b> <b>ISBN</b>
+				</div>
+				<div class="book-table-rows"></div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
